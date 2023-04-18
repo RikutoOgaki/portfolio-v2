@@ -17,15 +17,25 @@ export function Header() {
                         justifyContent={'space-around'}>
                         <Link href={'/'}>
                             <Text
-                                fontSize={{ base: '3x', lg: '4xl' }}>
+                                bgGradient='linear(to-l, blue.200 , purple.500)'
+                                bgClip='text'
+                                fontSize={{ base: '3xl', lg: '4xl' }}>
                                 TOP</Text>
                         </Link>
-                        <Text
-                            fontSize={{ base: '3xl', lg: '4xl' }}
-                        >ABOUT</Text>
-                        <Text
-                            fontSize={{ base: '3xl', lg: '4xl' }}
-                        >MySkill</Text>
+                        <Link href={'/'}>
+                            <Text
+                                bgGradient='linear(to-l, blue.200 , purple.500)'
+                                bgClip='text'
+                                fontSize={{ base: '3xl', lg: '4xl' }}
+                            >ABOUT</Text>
+                        </Link>
+                        <Link href={'/'}>
+                            <Text
+                                bgGradient='linear(to-l, blue.200 , purple.500)'
+                                bgClip='text'
+                                fontSize={{ base: '3xl', lg: '4xl' }}
+                            >MySkill</Text>
+                        </Link>
                     </Flex>
                 </Box>
             </header>
