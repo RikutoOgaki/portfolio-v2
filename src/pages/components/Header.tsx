@@ -5,14 +5,22 @@ export function Header() {
     return (
         <>
             <header>
-                <Flex
-                    width={'100%'}
-                    height={'100%'}
-                    justifyContent={'space-around'}>
-                    <Text>TOP</Text>
-                    <Text>ABOUT</Text>
-                    <Text>MtSkioo</Text>
-                </Flex>
+                <Box position={'relative'}>
+                    <Flex
+                        width={'100%'}
+                        height={'5vh'}
+                        position={'absolute'}
+                        alignItems={'center'}
+                        justifyContent={'space-around'}>
+                        <Text
+                            fontSize={{ base: '3x', lg: '6vh' }}>
+                            TOP</Text>
+                        <Text
+                            fontSize={{ base: '3x', lg: '6vh' }}
+                        >ABOUT</Text>
+                        <Text>MtSkill</Text>
+                    </Flex>
+                </Box>
             </header>
         </>
     )
