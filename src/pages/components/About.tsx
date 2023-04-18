@@ -10,8 +10,9 @@ export default function About() {
                     bgClip='text'
                     fontWeight={'bold'}
                     alignItems={'flex-start'}
-                    marginLeft={{ base: '2rem', lg: '4rem' }}
+                    marginLeft={{ base: '2rem', lg: '15rem' }}
                     marginRight={'2rem'}
+                    gap={'1rem'}
                 >
                     <Text fontSize={{ base: '2xl', lg: '4xl' }}>-About Me-</Text>
                     <Text fontSize={{ base: '2xl', lg: '4xl' }}>おおがき りくと</Text>
