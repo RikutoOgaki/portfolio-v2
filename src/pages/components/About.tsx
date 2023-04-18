@@ -10,6 +10,7 @@ export default function About() {
                     <Text>大垣 陸斗</Text>
                     <Text>2003年5月31日生まれ</Text>
                     <Text>ECCコンピューター専門学校Webデザインコース</Text>
+                    <Text></Text>
                 </Flex>
             </Flex>
         </>
