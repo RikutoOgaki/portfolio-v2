@@ -9,6 +9,7 @@ export function Header() {
                     <Flex
                         width={'100%'}
                         height={'5vh'}
+                        color={'#fff'}
                         position={'absolute'}
                         top={0}
                         fontWeight={'bold'}
@@ -24,7 +25,7 @@ export function Header() {
                         >ABOUT</Text>
                         <Text
                             fontSize={{ base: '3xl', lg: '4xl' }}
-                        >MtSkill</Text>
+                        >MySkill</Text>
                     </Flex>
                 </Box>
             </header>
