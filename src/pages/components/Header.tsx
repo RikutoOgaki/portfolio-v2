@@ -1,7 +1,7 @@
 import { Box, Flex, Text } from '@chakra-ui/react'
 import Link from 'next/link'
 
-export function Header() {
+export default function Header() {
     return (
         <>
             <header>
@@ -19,21 +19,21 @@ export function Header() {
                             <Text
                                 bgGradient='linear(to-l, blue.200 , purple.500)'
                                 bgClip='text'
-                                fontSize={{ base: '3xl', lg: '4xl' }}>
+                                fontSize={{ base: '3xl', lg: '5xl' }}>
                                 TOP</Text>
                         </Link>
                         <Link href={'/'}>
                             <Text
                                 bgGradient='linear(to-l, blue.200 , purple.500)'
                                 bgClip='text'
-                                fontSize={{ base: '3xl', lg: '4xl' }}
+                                fontSize={{ base: '3xl', lg: '5xl' }}
                             >ABOUT</Text>
                         </Link>
                         <Link href={'/'}>
                             <Text
                                 bgGradient='linear(to-l, blue.200 , purple.500)'
                                 bgClip='text'
-                                fontSize={{ base: '3xl', lg: '4xl' }}
+                                fontSize={{ base: '3xl', lg: '5xl' }}
                             >MySkill</Text>
                         </Link>
                     </Flex>
