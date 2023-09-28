@@ -1,5 +1,6 @@
 import Head from 'next/head'
 import Header from '@/components/Header'
+import Name from '@/components/Name'
 
 export default function Portfolio() {
   return (
@@ -9,6 +10,7 @@ export default function Portfolio() {
       </Head>
 
       <Header />
+      <Name />
     </>
   )
 }
