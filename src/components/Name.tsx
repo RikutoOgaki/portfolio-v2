@@ -44,8 +44,8 @@ export default function Name() {
                         paused={false}
                         style={{ display: 'flex' }}
                         options={{
-                            height: 20,
-                            amplitude: 20,
+                            height: 25,
+                            amplitude: 25,
                             speed: .5,
                             points: 3
                         }}
@@ -55,8 +55,8 @@ export default function Name() {
                         paused={false}
                         style={{ display: 'flex' }}
                         options={{
-                            height: 30,
-                            amplitude: 30,
+                            height: 50,
+                            amplitude: 50,
                             speed: .25,
                             points: 3
                         }}
