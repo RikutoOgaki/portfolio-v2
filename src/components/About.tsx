@@ -11,7 +11,7 @@ export default function About() {
                     <p>おおがき りくと</p>
                     <h3>大垣 陸斗</h3>
                     <p>
-
+                        楽しさを求め探究心を常に持っているところが自分の長所です。
                     </p>
                 </div>
             </div>
