@@ -1,7 +1,7 @@
 import Head from 'next/head'
-import Header from '@/components/Header'
-import Name from '@/components/Name'
-import About from '@/components/About'
+import { Box, Flex, Text } from '@chakra-ui/react'
+import { Particle } from '@/components/template/Particle'
+
 
 export default function Portfolio() {
   return (
@@ -9,10 +9,9 @@ export default function Portfolio() {
       <Head>
         <title>RikutoOgakiPortfolio</title>
       </Head>
-
-      <Header />
-      <Name />
-      <About />
+      <Box w={'100%'} h={'100%'}>
+        <Particle />
+      </Box>
     </>
   )
 }
