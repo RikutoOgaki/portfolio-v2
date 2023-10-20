@@ -8,14 +8,17 @@ export function MainView() {
                     <Text
                         color={'#ffffff'}
                         fontSize={{ base: '2xl', lg: '3xl' }}
+                        fontWeight={'extrabold'}
                     >Hi</Text>
                     <Text
                         color={'#ffffff'}
                         fontSize={{ base: '5xl', lg: '7xl' }}
+                        fontWeight={'extrabold'}
                     >RikutoOgaki</Text>
                     <Text
                         color={'#ffffff'}
                         fontSize={{ base: '2xl', lg: '3xl' }}
+                        fontWeight={'extrabold'}
                     >Front End Engineer</Text>
                 </Flex>
             </Flex>

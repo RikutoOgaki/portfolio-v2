@@ -24,6 +24,7 @@ export function AboutMe() {
                         as={'h2'}
                         textAlign={'center'}
                         color={'#ffffff'}
+                        fontWeight={'extrabold'}
                         zIndex={'999'}
                     >About Me</Text>
                     <Flex
