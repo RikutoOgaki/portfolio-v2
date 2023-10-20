@@ -26,6 +26,8 @@ export function AboutMe() {
                         color={'#ffffff'}
                         fontWeight={'extrabold'}
                         zIndex={'999'}
+                        fontSize={'3rem'}
+                        marginTop={'1rem'}
                     >About Me</Text>
                     <Flex
                         w={'100%'}
@@ -33,7 +35,6 @@ export function AboutMe() {
                         justifyContent={'space-around'}
                         alignItems={'center'}
                     >
-
                         {/* 自分のイラストか顔写真 */}
                         <Flex
                             w={'50%'}
@@ -60,6 +61,7 @@ export function AboutMe() {
                             flexDirection={'column'}
                             justifyContent={'center'}
                             alignItems={'flex-start'}
+                            gap={'1rem'}
                         >
                             <Text
                                 fontSize={{}}
@@ -72,13 +74,21 @@ export function AboutMe() {
                             <UnorderedList>
                                 <ListItem color={'#ffffff'}>
                                     <Text>自分はどういう人間か</Text>
-                                    <Text>テストで書いてみている</Text>
+                                    <Text>探究心を常にもち、自分を育成するのが好き</Text>
+                                    <Text marginRight={'2rem'}>
+                                        自分がしたいこと、興味あることはまずやってみることを心がけています。
+                                        自分がやってみて、探求したことをみんなに共有して自分もみんなも成長できる
+                                        ようになりたい
+                                    </Text>
                                 </ListItem>
                             </UnorderedList>
                             <UnorderedList>
                                 <ListItem color={'#ffffff'}>
                                     <Text>これまでの実績</Text>
-                                    <Text>テストで書いてみている</Text>
+                                    <UnorderedList>
+                                        <ListItem>2023年 8月 第18回 若年者物作り大会 出場</ListItem>
+                                        <ListItem>2023年 2月 ~ 8月 長期インターンシップ参加</ListItem>
+                                    </UnorderedList>
                                 </ListItem>
                             </UnorderedList>
                         </Flex>
