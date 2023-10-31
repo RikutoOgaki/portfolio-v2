@@ -1,4 +1,5 @@
 import { Box, Flex, Text, Image, ListItem, UnorderedList, } from '@chakra-ui/react'
+import { motion } from 'framer-motion'
 
 export function AboutMe() {
     return (

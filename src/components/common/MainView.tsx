@@ -19,7 +19,7 @@ export function MainView() {
                         color={'#ffffff'}
                         fontSize={{ base: '2xl', lg: '3xl' }}
                         fontWeight={'extrabold'}
-                    >Front End Engineer</Text>
+                    >Front End Developer</Text>
                 </Flex>
             </Flex>
         </>
