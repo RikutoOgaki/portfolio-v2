@@ -3,6 +3,7 @@ import { Box, Flex, Text } from '@chakra-ui/react'
 import { Particle } from '@/components/template/Particle'
 import { MainView } from '@/components/common/MainView'
 import { AboutMe } from '@/components/common/AboutMe'
+import { Myskill } from '@/components/common/Myskill'
 
 
 export default function Portfolio() {
@@ -15,6 +16,7 @@ export default function Portfolio() {
         <Particle />
         <MainView />
         <AboutMe />
+        <Myskill />
       </Box>
     </>
   )

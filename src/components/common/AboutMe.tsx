@@ -62,15 +62,15 @@ export function AboutMe() {
                             flexDirection={'column'}
                             justifyContent={'center'}
                             alignItems={'flex-start'}
-                            gap={'1rem'}
+                            gap={'.5rem'}
                         >
-                            <Text
-                                fontSize={{}}
-                                color={'#ffffff'}
-                            >おおがき りくと</Text>
                             <Text
                                 fontSize={{ base: '2xl', lg: '4xl' }}
                                 color={'#ffffff'}
+                            >おおがき りくと</Text>
+                            <Text
+                                color={'#ffffff'}
+                                fontSize={{ base: '3xl', lg: '4xl' }}
                             >大垣 陸斗</Text>
                             <UnorderedList>
                                 <ListItem color={'#ffffff'}>
