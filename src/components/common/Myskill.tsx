@@ -57,7 +57,7 @@ export function Myskill() {
                 alignItems={'center'}
             >
                 <Flex
-                    w={{ base: '30rem', lg: '40rem' }}
+                    w={{ base: '30rem', lg: '50rem' }}
                     h={{ base: '20rem', lg: '30rem' }}
                     bg={'blackAlpha.500'}
                     justifyContent={'center'}
@@ -67,44 +67,87 @@ export function Myskill() {
                 >
                     <Flex>
                         <Text
+                            w={'100%'}
+                            h={'10%'}
+                            as={'h2'}
+                            textAlign={'center'}
+                            color={'#ffffff'}
                             fontWeight={'extrabold'}
-                            fontSize={'4xl'}
+                            zIndex={'999'}
+                            fontSize={'3rem'}
+                            marginTop={'1rem'}
                         >My Skill</Text>
                     </Flex>
-                    <Flex gap={'.3rem'}>
-                        <Box
-                            w={'4rem'}
-                            height={'5rem'}
-                            bg={'#ffffff'}
+                    <Flex
+                        w={'100%'}
+                        h={'90%'}
+                        justifyContent={'center'}
+                        alignItems={'center'}
+                        gap={'.5rem'}
+                    >
+                        <Flex
+                            flexDirection={'column'}
                         >
-                            {iconArray.useskill.map((v, idx) =>
-                                <Box>
-                                    <Icon as={v} />
-                                </Box>
-                            )}
-                        </Box>
-                        <Box
-                            w={'2rem'}
-                            height={'10rem'}
-                            bg={'#ffffff'}
+                            <Text
+                                color={'#ffffff'}
+                            >UseSkill</Text>
+                            <Box
+                                w={'10rem'}
+                                height={'10rem'}
+                                bg={'#ffffff'}
+                                display={'flex'}
+                                flexWrap={'wrap'}
+                            >
+                                {iconArray.useskill.map((v, idx) =>
+                                    <Box key={idx}>
+                                        <Icon as={v} fontSize={'2rem'} />
+                                    </Box>
+                                )}
+                            </Box>
+                        </Flex>
+                        <Flex
+                            flexDirection={'column'}
+
                         >
-                            {iconArray.studyskill.map((v, idx) =>
-                                <Box>
-                                    <Icon as={v} />
-                                </Box>
-                            )}
-                        </Box>
-                        <Box
-                            w={'2rem'}
-                            height={'10rem'}
-                            bg={'#ffffff'}
+                            <Text
+                                color={'#ffffff'}
+
+                            >StudySkill</Text>
+                            <Box
+                                w={'4rem'}
+                                height={'5rem'}
+                                bg={'#ffffff'}
+                                display={'flex'}
+                                flexWrap={'wrap'}
+                            >
+                                {iconArray.studyskill.map((v, idx) =>
+                                    <Box key={idx}>
+                                        <Icon as={v} fontSize={'2rem'} />
+
+                                    </Box>
+                                )}
+                            </Box>
+                        </Flex>
+                        <Flex
+                            flexDirection={'column'}
                         >
-                            {iconArray.mainskill.map((v, idx) =>
-                                <Box>
-                                    <Icon as={v} />
-                                </Box>
-                            )}
-                        </Box>
+                            <Text
+                                color={'#ffffff'}
+                            >MainSkill</Text>
+                            <Box
+                                w={'4rem'}
+                                height={'5rem'}
+                                bg={'#ffffff'}
+                                display={'flex'}
+                                flexWrap={'wrap'}
+                            >
+                                {iconArray.mainskill.map((v, idx) =>
+                                    <Box key={idx} padding={'1rem'}>
+                                        <Icon as={v} fontSize={'2rem'} />
+                                    </Box>
+                                )}
+                            </Box>
+                        </Flex>
                     </Flex>
                 </Flex>
             </Flex>

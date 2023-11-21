@@ -12,7 +12,8 @@ export function AboutMe() {
                 flexDirection={'column'}
             >
                 <Flex
-                    w={{ base: '65rem', lg: '70rem' }} h={{ base: '30rem', lg: '35rem' }}
+                    w={{ base: '65rem', lg: '70rem' }}
+                    h={{ base: '30rem', lg: '35rem' }}
                     bg={'blackAlpha.500'}
                     justifyContent={'center'}
                     alignItems={'center'}
