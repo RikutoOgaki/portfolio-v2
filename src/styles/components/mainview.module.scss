@@ -13,13 +13,26 @@
         gap: 1rem;
 
         .name {
-            font-size: 4rem;
+            font-size: 6rem;
             color: #262626;
+            font-weight: bold;
         }
 
-        & p {
+        .text {
             font-size: 2rem;
             color: #262626;
+            font-weight: bold;
+        }
+
+        @media screen and (max-width:414px) {
+            .name {
+                font-size: 3.5rem;
+            }
+
+            .text {
+                font-size: 2rem;
+            }
         }
     }
+
 }

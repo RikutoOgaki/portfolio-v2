@@ -7,9 +7,9 @@ export function MainView() {
         <>
             <div className={style.mainViewWrap}>
                 <div className={style.myBox}>
-                    <p>Hi👋</p>
+                    <p className={style.text}>Hi👋</p>
                     <h1 className={style.name}>Rikuto Ogaki</h1>
-                    <p>Front end Developer</p>
+                    <p className={style.text}>Front end Developer</p>
                 </div>
             </div>
         </>
