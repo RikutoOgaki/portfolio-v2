@@ -21,11 +21,20 @@ export function Cube() {
                                         : v === 5 ? style.fiveFaces
                                             : v === 6 ? style.sixFaces
                                                 : undefined}>
-                        {trouts.map((v, idx2) =>
-                            <div
-                                key={idx2}
-                            // className={}
-                            ></div>
+                        {trouts.map((x, idx2) =>
+                            <div key={idx2} className={
+                                x === 1 ? style.subCubeRed
+                                    : x === 2 ? style.subCubeBlue
+                                        : x === 3 ? style.subCubeGreen
+                                            : x === 4 ? style.subCubeOrenge
+                                                : x === 5 ? style.subCubeWhite
+                                                    : x === 6 ? style.subCubeWhite
+                                                        : x === 7 ? style.subCubeYellow
+                                                            : x === 8 ? style.subCubeGreen
+                                                                : x === 9 ? style.subCubeYellow :
+                                                                    style.subCubeBox}>
+
+                            </div>
                         )}
                     </div>
                 )}

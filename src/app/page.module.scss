@@ -2,34 +2,5 @@
     width: 100%;
     height: 100%;
 
-    .firstViewBox {
-        width: 100%;
-        height: 100vh;
-        display: flex;
-        justify-content: center;
-        align-items: center;
 
-        .textBox {
-            width: 35rem;
-            height: 30rem;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            flex-direction: column;
-
-            & p {
-                font-size: 3rem;
-            }
-
-            & h2 {
-                font-size: 5rem;
-            }
-        }
-
-        .cubeBox {
-            width: 25rem;
-            height: 30rem;
-        }
-
-    }
 }
