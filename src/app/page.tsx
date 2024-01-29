@@ -3,6 +3,7 @@
 import style from "./page.module.scss";
 import { MainView } from "@/components/template/MainVIew";
 import { MyMotto } from "@/components/template/MyMotto";
+import { MyProfile } from "@/components/template/MyProfile";
 import { Cube } from '@/components/common/Cube'
 
 
@@ -13,7 +14,7 @@ export default function Home() {
       <div className={style.portfolioWrap}>
         <MainView />
         <MyMotto />
-
+        <MyProfile />
       </div>
     </>
   )
