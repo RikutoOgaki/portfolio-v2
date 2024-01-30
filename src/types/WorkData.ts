@@ -45,8 +45,8 @@ export const WorkData = [
         workName: '中崎図書館',
         workTime: '2年夏期講習',
         workSkill: ['HTML', 'SCSS', 'JavaScript'],
-        workLink: '',
-        imgLink: '',
+        workLink: 'https://sic-2023.vercel.app/',
+        imgLink: '/img/nakazaki.jpg',
         overview: '仕事終わりに図書館が使えない。昼間は学生などで少し騒がしいという悩みから考えた夜間図書館案内サイト。',
     },
     {

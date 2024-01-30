@@ -5,63 +5,59 @@ import { MainView } from "@/components/template/MainVIew";
 import { MyMotto } from "@/components/template/MyMotto";
 import { MyProfile } from "@/components/template/MyProfile";
 import { MySkill } from "@/components/template/MySkill";
-import { Cube } from '@/components/common/Cube'
+import { MyWork } from "@/components/template/MyWork";
 
-import { WorkData } from "@/types/WorkData";
-import { StudyData } from "@/types/StudyData";
-import Link from 'next/link'
+
+import { FaXTwitter, FaInstagram, FaGithub } from "react-icons/fa6"
+import { Icon } from '@chakra-ui/react'
 
 
 export default function Home() {
 
+  const linkArray = [
+    {
+      id: 1,
+      linkIcon: FaXTwitter,
+      link: 'https://twitter.com/Rikuto_Ogaki'
+    },
+    {
+      id: 2,
+      linkIcon: FaInstagram,
+      link: 'https://www.instagram.com/rikut0_0531'
+    },
+    {
+      id: 3,
+      linkIcon: FaGithub,
+      link: 'https://github.com/RikutoOgaki'
+    }
+  ]
+
   return (
     <>
       <div className={style.portfolioWrap}>
-        {/* <MainView />
+        <MainView />
         <MyMotto />
         <MyProfile />
-        <MySkill /> */}
-        <div className={style.myWorkBox}>
-          {WorkData.map((v, idx) =>
-            <div key={idx} className={style.workItem}>
-              <div className={style.imgBox}>
-                <figure>
-                  <img src={v.imgLink} alt="Mockup" />
-                </figure>
-              </div>
-              <div className={style.textBox}>
-                <p>{v.workName}</p>
-                <div className={style.skill}>
-                  {v.workSkill.map((x, idx2) =>
-                    <p key={idx2}>{x}</p>
-                  )}
+        <MySkill />
+        <MyWork />
+        <div className={style.foot}>
+          <div className={style.adressBox}>
+            <p>Gmail</p>
+            <p>orikutobasuke@gmail.com</p>
+          </div>
+          <div className={style.linkBox}>
+            {
+              linkArray.map((v, idx) =>
+                <div
+                  key={idx}
+                  className={style.iconBox}
+                  onClick={() => location.href = `${v.link}`}
+                >
+                  <Icon as={v.linkIcon} className={style.icon} />
                 </div>
-                <p>{v.workTime}</p>
-                <p>{v.overview}</p>
-                <Link href={v.workLink} className={style.link}>作品はこちら</Link>
-              </div>
-            </div>
-          )}
-          {StudyData.map((j, idx3) =>
-            <div key={idx3} className={style.workItem}>
-              <div className={style.imgBox}>
-                <figure>
-                  <img src={j.imgLink} alt="Mockup" />
-                </figure>
-              </div>
-              <div className={style.textBox}>
-                <p>{j.workName}</p>
-                <div className={style.skill}>
-                  {j.workSkill.map((x, idx2) =>
-                    <p key={idx2}>{x}</p>
-                  )}
-                </div>
-                <p>{j.workTime}</p>
-                <p>{j.overview}</p>
-                <Link href={j.workLink} className={style.link}>作品はこちら</Link>
-              </div>
-            </div>
-          )}
+              )
+            }
+          </div>
         </div>
       </div>
     </>

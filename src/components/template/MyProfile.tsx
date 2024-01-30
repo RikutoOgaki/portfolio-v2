@@ -9,7 +9,7 @@ export function MyProfile() {
                 <div className={style.myPrifile}>
                     <div className={style.myImgBox}>
                         <figure>
-                            <img src="" alt="" />
+                            <img src="/img/myface.jpg" alt="" />
                         </figure>
                     </div>
                     <div className={style.myTextBox}>
