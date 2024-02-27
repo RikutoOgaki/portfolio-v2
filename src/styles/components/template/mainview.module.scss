@@ -40,3 +40,38 @@
     }
 
 }
+
+@media (max-width:430px) {
+    .firstViewBox {
+        width: 100%;
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+
+        .textBox {
+            width: 100%;
+            height: 20rem;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+
+            & p {
+                font-size: 1rem;
+            }
+
+            & h2 {
+                font-size: 3rem;
+            }
+        }
+
+        .cubeBox {
+            width: 100%;
+            height: 20rem;
+            display: flex;
+
+        }
+    }
+}
